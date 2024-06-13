@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.analog-stopwatch .clock {
+  width: 100%;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.analog-stopwatch .hand {
+  top: 50%;
+  left: 50%;
+  transform-origin: center bottom;
+}
+
+.analog-stopwatch .second-hand {
+  width: 1px;
+  height: 50%;
+  background-color: #f00;
+}
+
+.analog-stopwatch .minute-hand {
+  width: 2px;
+  height: 45%;
+  background-color: #000;
+}
+
+.analog-stopwatch .hour-hand {
+  width: 3px;
+  height: 40%;
+  background-color: #000;
+}
+
+.analog-stopwatch .center {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
 }
